@@ -53,15 +53,15 @@ export default function ContactForm() {
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold mb-3">Schedule Your Installation</h2>
         <p className="text-foreground/80">
-          Request an installation appointment for your QRS Player Piano System. We'll contact you to confirm details and schedule your piano pickup.
+          Request an installation appointment for your QRS Player Piano System
         </p>
       </div>
       
-      <form onSubmit={handleSubmit} className="space-y-6 bg-white rounded-lg shadow-md border border-border p-6 md:p-8">
+      <form onSubmit={handleSubmit} className="space-y-6 bg-card rounded-lg border border-border p-6 md:p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium mb-1">
-              Full Name <span className="text-red-500">*</span>
+            <label htmlFor="name" className="block text-sm font-medium mb-1 text-foreground/90">
+              Full Name <span className="text-accent">*</span>
             </label>
             <input
               type="text"
@@ -70,14 +70,14 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleInputChange}
               required
-              className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              className="w-full px-3 py-2 bg-background border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-foreground"
               placeholder="Your name"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-1">
-              Email Address <span className="text-red-500">*</span>
+            <label htmlFor="email" className="block text-sm font-medium mb-1 text-foreground/90">
+              Email Address <span className="text-accent">*</span>
             </label>
             <input
               type="email"
@@ -86,14 +86,14 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleInputChange}
               required
-              className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              className="w-full px-3 py-2 bg-background border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-foreground"
               placeholder="your.email@example.com"
             />
           </div>
           
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium mb-1">
-              Phone Number <span className="text-red-500">*</span>
+            <label htmlFor="phone" className="block text-sm font-medium mb-1 text-foreground/90">
+              Phone Number <span className="text-accent">*</span>
             </label>
             <input
               type="tel"
@@ -102,13 +102,13 @@ export default function ContactForm() {
               value={formData.phone}
               onChange={handleInputChange}
               required
-              className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              className="w-full px-3 py-2 bg-background border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-foreground"
               placeholder="(555) 123-4567"
             />
           </div>
           
           <div>
-            <label htmlFor="pianoType" className="block text-sm font-medium mb-1">
+            <label htmlFor="pianoType" className="block text-sm font-medium mb-1 text-foreground/90">
               Piano Type
             </label>
             <select
@@ -116,7 +116,7 @@ export default function ContactForm() {
               name="pianoType"
               value={formData.pianoType}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              className="w-full px-3 py-2 bg-background border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-foreground"
             >
               <option value="">Select your piano type</option>
               <option value="Grand">Grand Piano</option>
@@ -125,24 +125,24 @@ export default function ContactForm() {
               <option value="Other">Other</option>
             </select>
           </div>
-          
-          <div>
-            <label htmlFor="preferredDate" className="block text-sm font-medium mb-1">
-              Preferred Pickup Date
-            </label>
-            <input
-              type="date"
-              id="preferredDate"
-              name="preferredDate"
-              value={formData.preferredDate}
-              onChange={handleInputChange}
-              className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-            />
-          </div>
+        </div>
+        
+        <div>
+          <label htmlFor="preferredDate" className="block text-sm font-medium mb-1 text-foreground/90">
+            Preferred Pickup Date
+          </label>
+          <input
+            type="date"
+            id="preferredDate"
+            name="preferredDate"
+            value={formData.preferredDate}
+            onChange={handleInputChange}
+            className="w-full px-3 py-2 bg-background border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-foreground"
+          />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium mb-1">
+          <label htmlFor="message" className="block text-sm font-medium mb-1 text-foreground/90">
             Additional Information
           </label>
           <textarea
@@ -151,8 +151,8 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleInputChange}
             rows={4}
-            className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-            placeholder="Please share any additional details about your piano or installation needs..."
+            className="w-full px-3 py-2 bg-background border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-foreground"
+            placeholder="Please share any details about your piano..."
           />
         </div>
 
@@ -160,20 +160,21 @@ export default function ContactForm() {
         
         <Button
           type="submit"
+          variant="accent"
           disabled={isSubmitting}
-          className="w-full py-3 text-lg"
+          className="w-full py-3"
         >
           {isSubmitting ? "Submitting..." : "Schedule Installation"}
         </Button>
 
         {submitStatus === "success" && (
-          <div className="p-3 bg-green-100 border border-green-400 text-green-700 rounded">
+          <div className="p-3 bg-background/50 border border-accent text-foreground rounded">
             Thank you for your request! We'll contact you shortly to confirm your installation details.
           </div>
         )}
 
         {submitStatus === "error" && (
-          <div className="p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+          <div className="p-3 bg-background/50 border border-destructive text-foreground rounded">
             There was an error submitting the form. Please try again or contact us directly.
           </div>
         )}

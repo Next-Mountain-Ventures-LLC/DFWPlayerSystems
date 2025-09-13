@@ -4,87 +4,95 @@ import { buttonVariants } from "@/components/ui/button";
 
 <section id="products" class="py-20">
   <div class="container">
-    <div class="text-center max-w-2xl mx-auto mb-16">
+    <div class="text-center max-w-2xl mx-auto mb-12">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">QRS PNO4 Player System</h2>
-      <p class="text-foreground/80 text-lg">
-        Experience the magic of automated piano performance with the industry-leading QRS PNO4 player system.
+      <p class="text-foreground/80">
+        Transform your piano into an automated musical instrument with thousands of songs at your fingertips.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <div class="relative">
-        <div class="bg-accent/10 absolute -inset-4 rounded-xl rotate-1"></div>
-        <div class="relative">
+    <div class="grid md:grid-cols-5 gap-8 items-start">
+      <div class="md:col-span-2">
+        <div class="relative mb-8">
           <img 
-            src="https://images.unsplash.com/photo-1576487236230-eaa4afe9b453?w=1200&h=600&auto=format&fit=crop&q=80" 
+            src="https://images.unsplash.com/photo-1576487236230-eaa4afe9b453?w=800&auto=format&fit=crop&q=80" 
             alt="Grand piano with player system installed" 
-            class="rounded-lg shadow-lg w-full h-auto object-cover aspect-video"
+            class="rounded-lg w-full h-auto"
           />
         </div>
-      </div>
-
-      <div class="space-y-6">
-        <div class="space-y-2">
-          <h3 class="text-2xl font-bold">The Future of Piano Performance</h3>
-          <p class="text-foreground/80">
-            The QRS PNO4 transforms your piano into a state-of-the-art entertainment system while preserving its acoustic integrity. This advanced system includes:
-          </p>
-        </div>
-
-        <ul class="space-y-4">
-          <li class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            </div>
-            <div>
-              <span class="font-semibold text-lg">Vast Music Library</span>
-              <p class="text-foreground/80">Access thousands of songs across all genres, from classical masterpieces to contemporary hits.</p>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            </div>
-            <div>
-              <span class="font-semibold text-lg">Wi-Fi Connectivity</span>
-              <p class="text-foreground/80">Control your piano from your smartphone, tablet, or computer with wireless connectivity.</p>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            </div>
-            <div>
-              <span class="font-semibold text-lg">Precision Engineering</span>
-              <p class="text-foreground/80">High-resolution solenoids and advanced driver boards ensure perfect key movement and expression.</p>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            </div>
-            <div>
-              <span class="font-semibold text-lg">Non-Invasive Installation</span>
-              <p class="text-foreground/80">Our specialized technique preserves your piano's aesthetics and acoustic properties.</p>
-            </div>
-          </li>
-        </ul>
-
-        <div class="pt-4">
+        
+        <div class="space-y-4">
           <a 
             href="https://www.qrsmusic.com/assets/pdf/PNO4%20Brochure.pdf" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class={buttonVariants({ variant: 'outline', size: 'lg' })}
+            class={buttonVariants({ variant: 'outline', class: "w-full" })}
           >
             Download PNO4 Brochure
           </a>
+          
           <a 
             href="#contact" 
-            class={buttonVariants({ variant: 'default', size: 'lg', class: "ml-4" })}
+            class={buttonVariants({ variant: 'accent', class: "w-full" })}
           >
-            Get a Quote
+            Schedule Installation
           </a>
+        </div>
+      </div>
+
+      <div class="md:col-span-3 bg-card p-6 md:p-8 rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">System Features</h3>
+        
+        <div class="grid gap-6">
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-foreground"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Extensive Music Library</h4>
+              <p class="text-foreground/80">Access thousands of songs across all genres from classical masterpieces to contemporary hits.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-foreground"><path d="M10 2v7.31"/><path d="M14 9v5.69"/><path d="M10 13v9"/><path d="M14 19v3"/><path d="M20 2v21"/><path d="M4 2v21"/></svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Precision Performance</h4>
+              <p class="text-foreground/80">High-resolution solenoids and advanced driver boards ensure perfect key movement and expressive playing.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-foreground"><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M15 3a4 4 0 0 1 0 8h5a4 4 0 0 0 0-8Z"/><path d="M9 13v8"/><path d="M15 13v8"/></svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Smartphone Control</h4>
+              <p class="text-foreground/80">Control your piano wirelessly from your smartphone, tablet, or computer with the intuitive QRS app.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-foreground"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Wi-Fi Connectivity</h4>
+              <p class="text-foreground/80">Stream music directly to your piano from online services or your personal music collection.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-foreground"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Non-Invasive Installation</h4>
+              <p class="text-foreground/80">Our specialized technique preserves your piano's aesthetics and acoustic properties with minimal visible changes.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

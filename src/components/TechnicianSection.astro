@@ -2,65 +2,77 @@
 import { buttonVariants } from "@/components/ui/button";
 ---
 
-<section id="technician" class="py-20">
+<section id="technician" class="py-20 bg-muted">
   <div class="container">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Master Technician</h2>
-      <p class="text-foreground/80 text-lg">
-        Your piano is in the hands of an industry expert with decades of experience.
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Expert Piano Technician</h2>
+      <p class="text-foreground/80">
+        Your piano is in the hands of a master with decades of experience
       </p>
     </div>
 
-    <div class="grid md:grid-cols-5 gap-10 items-center">
-      <div class="md:col-span-2">
-        <div class="bg-muted p-1 rounded-lg">
-          <div class="aspect-square rounded-lg overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1685195154261-c8167ca7f88c?w=1200&h=600&auto=format&fit=crop&q=80" 
-              alt="Piano technician working on a grand piano" 
-              class="w-full h-full object-cover"
-            />
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="space-y-6">
+        <div class="bg-card p-6 md:p-8 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Second-Generation Piano Expert</h3>
+          <p class="text-foreground/80 mb-6">
+            Our lead technician brings a lifetime of piano expertise to every installation. 
+            With over 15 years specializing in player piano systems, his precision and 
+            attention to detail ensure your piano maintains its unique character while 
+            gaining automated playing capabilities.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-background p-4 rounded-lg">
+              <div class="text-3xl font-display font-bold text-accent mb-1">6,000+</div>
+              <p class="text-foreground/70 text-sm">Pianos serviced</p>
+            </div>
+            
+            <div class="bg-background p-4 rounded-lg">
+              <div class="text-3xl font-display font-bold text-accent mb-1">1.5M+</div>
+              <p class="text-foreground/70 text-sm">Notes tuned</p>
+            </div>
+            
+            <div class="bg-background p-4 rounded-lg">
+              <div class="text-3xl font-display font-bold text-accent mb-1">15+</div>
+              <p class="text-foreground/70 text-sm">Years experience</p>
+            </div>
+            
+            <div class="bg-background p-4 rounded-lg">
+              <div class="text-3xl font-display font-bold text-accent mb-1">100%</div>
+              <p class="text-foreground/70 text-sm">Satisfaction</p>
+            </div>
+          </div>
+          
+          <div class="mt-6">
+            <a href="#contact" class={buttonVariants({ variant: 'accent' })}>
+              Work With Our Expert
+            </a>
+          </div>
+        </div>
+        
+        <div class="bg-card p-6 rounded-lg">
+          <div class="flex items-start gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-1"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            <blockquote class="text-foreground/80 italic">
+              "Our technician's knowledge and attention to detail was remarkable. The player system works flawlessly, and the piano sounds just as beautiful as before."
+            </blockquote>
           </div>
         </div>
       </div>
-
-      <div class="md:col-span-3 space-y-6">
-        <div>
-          <h3 class="text-2xl font-bold mb-2">Second-Generation Piano Expert</h3>
-          <p class="text-foreground/80 text-lg mb-4">
-            Our lead piano technician brings a lifetime of piano expertise to every installation, with achievements that speak to his mastery:
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-border">
-            <div class="text-4xl font-display font-bold text-primary mb-2">6,000+</div>
-            <p class="text-foreground/80">Pianos tuned and serviced throughout his career</p>
+      
+      <div>
+        <div class="relative h-full">
+          <div class="bg-card p-2 rounded-lg h-full">
+            <img 
+              src="https://images.unsplash.com/photo-1685195154261-c8167ca7f88c?w=800&h=800&auto=format&fit=crop&q=80" 
+              alt="Piano technician working on a grand piano" 
+              class="rounded-lg w-full h-full object-cover"
+            />
           </div>
-          
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-border">
-            <div class="text-4xl font-display font-bold text-primary mb-2">1.5M+</div>
-            <p class="text-foreground/80">Individual piano notes carefully tuned and adjusted</p>
+          <div class="absolute bottom-6 right-6 bg-accent text-accent-foreground py-2 px-4 rounded font-medium">
+            Authorized QRS Installer
           </div>
-          
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-border">
-            <div class="text-4xl font-display font-bold text-primary mb-2">15+ Yrs</div>
-            <p class="text-foreground/80">Specialized experience installing player piano systems</p>
-          </div>
-          
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-border">
-            <div class="text-4xl font-display font-bold text-primary mb-2">Custom</div>
-            <p class="text-foreground/80">Piano tools invented to perfect the restoration process</p>
-          </div>
-        </div>
-
-        <div class="pt-4">
-          <p class="text-foreground/80 mb-4">
-            Our technician has dedicated his career to piano restoration, design, and performance optimization. His expertise ensures your player system installation is performed with precision and care, preserving your piano's unique character while adding automated playing capabilities.
-          </p>
-          <a href="#contact" class={buttonVariants({ variant: 'default' })}>
-            Work With Our Expert
-          </a>
         </div>
       </div>
     </div>
