@@ -56,6 +56,16 @@ export default {
           foreground: 'hsl(var(--card-foreground))',
         },
       },
+      textColor: {
+        primary: '#93c2e0',
+        secondary: '#813125',
+        accent: '#c2ca45',
+      },
+      backgroundColor: {
+        primary: '#93c2e0',
+        secondary: '#813125',
+        accent: '#c2ca45',
+      }
     },
   },
 } satisfies Config;
