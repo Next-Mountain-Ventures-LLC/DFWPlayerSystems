@@ -96,20 +96,20 @@
 @layer base {
   :root {
     /* New color palette */
-    --background: 320 10% 3%; /* #060405 */
-    --foreground: 320 10% 91%; /* #ece4e8 */
-    --card: 320 10% 6%; /* Slightly lighter than background */
-    --card-foreground: 320 10% 91%; /* Same as foreground */
-    --popover: 320 10% 6%; /* Same as card */
-    --popover-foreground: 320 10% 91%; /* Same as foreground */
-    --primary: 325 20% 74%; /* #c8afbb */
-    --primary-foreground: 320 10% 3%; /* Same as background */
+    --background: 30 7% 6%; /* #100f0d */
+    --foreground: 30 10% 94%; /* #f2f0ef */
+    --card: 30 7% 10%; /* Slightly lighter than background */
+    --card-foreground: 30 10% 94%; /* Same as foreground */
+    --popover: 30 7% 10%; /* Same as card */
+    --popover-foreground: 30 10% 94%; /* Same as foreground */
+    --primary: 20 10% 74%; /* #c4bcb6 */
+    --primary-foreground: 30 7% 6%; /* Same as background */
     --secondary: 28 20% 33%; /* #655445 */
-    --secondary-foreground: 320 10% 91%; /* Same as foreground */
-    --muted: 320 10% 10%; /* Slightly lighter than background */
-    --muted-foreground: 320 5% 70%; /* Slightly dimmer than foreground */
+    --secondary-foreground: 30 10% 94%; /* Same as foreground */
+    --muted: 30 7% 15%; /* Slightly lighter than background */
+    --muted-foreground: 30 5% 70%; /* Slightly dimmer than foreground */
     --accent: 43 17% 53%; /* #9d906f */
-    --accent-foreground: 320 10% 3%; /* Same as background */
+    --accent-foreground: 30 7% 6%; /* Same as background */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 320 10% 15%; /* Slightly lighter than background */

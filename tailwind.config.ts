@@ -57,12 +57,12 @@ export default {
         },
       },
       textColor: {
-        primary: '#c8afbb',
+        primary: '#c4bcb6',
         secondary: '#655445',
         accent: '#9d906f',
       },
       backgroundColor: {
-        primary: '#c8afbb',
+        primary: '#c4bcb6',
         secondary: '#655445',
         accent: '#9d906f',
       }
