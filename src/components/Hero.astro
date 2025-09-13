@@ -1,0 +1,56 @@
+---
+import { buttonVariants } from "@/components/ui/button";
+---
+
+<section class="relative overflow-hidden py-24 md:py-32 lg:py-40">
+  <div class="absolute inset-0 piano-keys-bg opacity-10"></div>
+  
+  <div class="container relative z-10">
+    <div class="flex flex-col items-center text-center max-w-4xl mx-auto animate-fade-in">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+        Transform Your Piano with <span class="text-accent">Automated Playing</span>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-foreground/80 mb-10 max-w-2xl">
+        DFW Player Systems delivers premium QRS piano automation systems with expert installation in just 7 days. Enjoy thousands of songs played perfectly on your piano.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        <a href="#contact" class={buttonVariants({ variant: 'default', size: 'lg', class: "w-full sm:w-auto" })}>
+          Schedule Your Installation
+        </a>
+        <a href="#process" class={buttonVariants({ variant: 'outline', size: 'lg', class: "w-full sm:w-auto" })}>
+          Learn Our Process
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-16 lg:mt-24">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
+      <div class="bg-white rounded-lg p-6 shadow-sm border border-border animate-slide-in-right" style="animation-delay: 0.1s;">
+        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 5v14"/><path d="M9 9h7"/><path d="M9 15h7"/></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Thousands of Songs</h3>
+        <p class="text-foreground/80">Access an extensive library of music from classical to contemporary hits.</p>
+      </div>
+      
+      <div class="bg-white rounded-lg p-6 shadow-sm border border-border animate-slide-in-right" style="animation-delay: 0.2s;">
+        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Expert Installation</h3>
+        <p class="text-foreground/80">Professional installation by a second-generation piano technician with 15+ years of experience.</p>
+      </div>
+      
+      <div class="bg-white rounded-lg p-6 shadow-sm border border-border animate-slide-in-right" style="animation-delay: 0.3s;">
+        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2">7-Day Turnaround</h3>
+        <p class="text-foreground/80">Quick installation process with your piano returned to your home in just one week.</p>
+      </div>
+    </div>
+  </div>
+</section>

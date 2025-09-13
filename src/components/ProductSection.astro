@@ -1,0 +1,92 @@
+---
+import { buttonVariants } from "@/components/ui/button";
+---
+
+<section id="products" class="py-20">
+  <div class="container">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">QRS PNO4 Player System</h2>
+      <p class="text-foreground/80 text-lg">
+        Experience the magic of automated piano performance with the industry-leading QRS PNO4 player system.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="relative">
+        <div class="bg-accent/10 absolute -inset-4 rounded-xl rotate-1"></div>
+        <div class="relative">
+          <img 
+            src="https://images.unsplash.com/photo-1576487236230-eaa4afe9b453?w=1200&h=600&auto=format&fit=crop&q=80" 
+            alt="Grand piano with player system installed" 
+            class="rounded-lg shadow-lg w-full h-auto object-cover aspect-video"
+          />
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="space-y-2">
+          <h3 class="text-2xl font-bold">The Future of Piano Performance</h3>
+          <p class="text-foreground/80">
+            The QRS PNO4 transforms your piano into a state-of-the-art entertainment system while preserving its acoustic integrity. This advanced system includes:
+          </p>
+        </div>
+
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <span class="font-semibold text-lg">Vast Music Library</span>
+              <p class="text-foreground/80">Access thousands of songs across all genres, from classical masterpieces to contemporary hits.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <span class="font-semibold text-lg">Wi-Fi Connectivity</span>
+              <p class="text-foreground/80">Control your piano from your smartphone, tablet, or computer with wireless connectivity.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <span class="font-semibold text-lg">Precision Engineering</span>
+              <p class="text-foreground/80">High-resolution solenoids and advanced driver boards ensure perfect key movement and expression.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <span class="font-semibold text-lg">Non-Invasive Installation</span>
+              <p class="text-foreground/80">Our specialized technique preserves your piano's aesthetics and acoustic properties.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="pt-4">
+          <a 
+            href="https://www.qrsmusic.com/assets/pdf/PNO4%20Brochure.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class={buttonVariants({ variant: 'outline', size: 'lg' })}
+          >
+            Download PNO4 Brochure
+          </a>
+          <a 
+            href="#contact" 
+            class={buttonVariants({ variant: 'default', size: 'lg', class: "ml-4" })}
+          >
+            Get a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -6,24 +6,79 @@ import { buttonVariants } from "@/components/ui/button";
   class="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur"
 >
   <div
-    class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
+    class="container flex h-20 items-center space-x-4 sm:justify-between sm:space-x-0"
   >
     <div class="flex gap-6 md:gap-10">
       <a href="/" class="flex items-center space-x-2">
-        <span class="inline-block font-bold">Home</span>
+        <span class="font-display text-2xl font-bold text-primary">DFW Player Systems</span>
       </a>
     </div>
     <div class="flex flex-1 items-center justify-end space-x-4">
-      <nav class="flex items-center space-x-1">
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#about" class="text-foreground/80 hover:text-foreground transition-colors font-medium">
+          About
+        </a>
+        <a href="#process" class="text-foreground/80 hover:text-foreground transition-colors font-medium">
+          Our Process
+        </a>
+        <a href="#products" class="text-foreground/80 hover:text-foreground transition-colors font-medium">
+          Products
+        </a>
+        <a href="#technician" class="text-foreground/80 hover:text-foreground transition-colors font-medium">
+          Our Technician
+        </a>
         <a
-          href="https://github.com/"
-          target="_blank"
-          rel="noreferrer"
-          class={buttonVariants({ variant: 'ghost' })}
+          href="#contact"
+          class={buttonVariants({ variant: 'default', size: 'sm' })}
         >
-          Example link
+          Schedule Install
         </a>
       </nav>
+      <button id="mobile-menu-button" class="md:hidden bg-transparent border-none flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Mobile menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden w-full bg-background border-b">
+    <div class="container py-4 space-y-4">
+      <a href="#about" class="block py-2 text-foreground/80 hover:text-foreground transition-colors">
+        About
+      </a>
+      <a href="#process" class="block py-2 text-foreground/80 hover:text-foreground transition-colors">
+        Our Process
+      </a>
+      <a href="#products" class="block py-2 text-foreground/80 hover:text-foreground transition-colors">
+        Products
+      </a>
+      <a href="#technician" class="block py-2 text-foreground/80 hover:text-foreground transition-colors">
+        Our Technician
+      </a>
+      <a
+        href="#contact"
+        class={buttonVariants({ variant: 'default', size: 'sm', class: "w-full justify-center" })}
+      >
+        Schedule Install
+      </a>
     </div>
   </div>
 </header>
+
+<script>
+  // Toggle mobile menu
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Close mobile menu when clicking on a link
+  const mobileLinks = mobileMenu?.querySelectorAll('a');
+  mobileLinks?.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+</script>
