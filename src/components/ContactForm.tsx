@@ -26,26 +26,12 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    try {
-      const response = await fetch("https://api.new.website/api/submit-form/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setSubmitStatus("success");
-        setFormData(defaultFormData);
-      } else {
-        setSubmitStatus("error");
-      }
-    } catch (error) {
-      setSubmitStatus("error");
-    } finally {
+    // Simulate form submission with a brief delay
+    setTimeout(() => {
+      setSubmitStatus("success");
+      setFormData(defaultFormData);
       setIsSubmitting(false);
-    }
+    }, 500);
   };
 
   return (
